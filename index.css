@@ -1,0 +1,67 @@
+@font-face {
+  font-family: indieFlower;
+  src: url(IndieFlower-Regular.ttf);
+}
+
+body {
+  width: calc(2 * 100vw);
+  height: calc(2 * 100vh);
+  background: radial-gradient(
+    circle,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  color: #fff;
+  font-family: indieFlower;
+}
+
+#instructions {
+  font-size: 40px;
+  position: absolute;
+  top: 150px;
+  left: 150px;
+}
+
+#hey {
+  position: absolute;
+  left: 4000px;
+  top: 200px;
+  font-size: 48px;
+}
+
+#hey2 {
+  position: absolute;
+  left: 10000px;
+  top: 400px;
+  font-size: 48px;
+}
+
+#modal {
+  background-color: red;
+  color: black;
+  position: fixed;
+  left: 10%;
+  z-index: 2;
+  width: 80vw;
+  height: 70vh;
+
+  opacity: 0;
+  border: 8px solid black;
+}
+
+#modal div {
+  font-size: 3rem;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#modal button {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
