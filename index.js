@@ -27,9 +27,3 @@ closeButton.addEventListener("click", () => {
     modal.style.opacity = 0;
   }, 1000);
 });
-
-firstInput.addEventListener("keydown", () => {
-  window.setTimeout(() => {
-    firstInput.value = "";
-  }, 500);
-});
