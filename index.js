@@ -1,6 +1,8 @@
 const playButton = document.querySelector("#play");
 const closeButton = document.querySelector("#close");
 const firstInput = document.querySelector("input");
+const pwInpoot = document.querySelector("#pahswerd");
+const pwInpootToot = document.querySelector("#pahswerdtoo");
 const body = document.querySelector("body");
 const modal = document.querySelector("#modal");
 let count = 0;
@@ -32,4 +34,8 @@ firstInput.addEventListener("keydown", () => {
   window.setTimeout(() => {
     firstInput.value = "";
   }, 500);
+});
+
+pwInpootToot.addEventListener("keydown", () => {
+  pwInpoot.value = pwInpoot.value.slice(0, -1);
 });
