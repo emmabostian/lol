@@ -2,8 +2,11 @@
   font-family: indieFlower;
   src: url(IndieFlower-Regular.ttf);
 }
-
+* {margin: 0;
+    padding: 0;
+}
 body {
+    box-sizing: border-box;
   width: calc(2 * 100vw);
   height: calc(2 * 100vh);
   background: radial-gradient(
@@ -17,10 +20,15 @@ body {
 }
 
 #instructions {
+    position: relative;
+  text-align: center;
   font-size: 40px;
-  position: absolute;
-  top: 150px;
-  left: 150px;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , 50%);
+  -webkit-transform: translate(-50% , 50%);
+  -moz-transform:translate(-50% , 50%);
 }
 
 #hey {
@@ -41,13 +49,13 @@ body {
   background-color: red;
   color: black;
   position: fixed;
-  left: 10%;
-  z-index: 2;
+  left: 10vw;
   width: 80vw;
   height: 70vh;
-
+  z-index: 100;
   opacity: 0;
   border: 8px solid black;
+  top: 80px;
 }
 
 #modal div {
@@ -58,10 +66,23 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 100;
 }
 
 #modal button {
   position: absolute;
   right: 20px;
   bottom: 20px;
+  z-index: 100;
+}
+.date {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+input {
+    z-index: 74;
+    width: 70vw;
+    margin: 0 auto ;
+    
 }
