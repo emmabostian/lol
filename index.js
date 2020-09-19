@@ -7,6 +7,8 @@ const body = document.querySelector("body");
 const modal = document.querySelector("#modal");
 let count = 0;
 
+const audio = new Audio("lol.mp3");
+
 playButton.addEventListener("click", handlePlayClick);
 
 function handlePlayClick() {
@@ -15,7 +17,6 @@ function handlePlayClick() {
     count++;
   } else if (count === 1) {
     playButton.textContent = "LOL K";
-    const audio = new Audio("lol.mp3");
     audio.play();
   }
 }
